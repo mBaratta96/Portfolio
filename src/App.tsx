@@ -8,20 +8,19 @@ import classes from "./App.module.scss";
 import RouteContent from "./components/RouteContent";
 
 function App() {
-	const particlesInit = async (engine: Engine): Promise<void> => {
-		loadStarsPreset(engine);
-	};
+    const particlesInit = async (engine: Engine): Promise<void> => {
+        loadStarsPreset(engine);
+    };
 
-	return (
-		<div className={classes.root}>
-			<Header />
-			<Particles
-				init={particlesInit}
-				options={particlesOptions as ISourceOptions}
-				className={classes.particles}
-			></Particles>
-			<RouteContent />
-		</div>
-	);
+    return (
+        <div className={classes.root}>
+            <Header />
+            <Particles
+                init={particlesInit}
+                options={particlesOptions as ISourceOptions}
+                className={classes.particles}></Particles>
+            <RouteContent />
+        </div>
+    );
 }
 export default App;

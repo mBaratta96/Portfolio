@@ -1,17 +1,15 @@
 import React, { useCallback } from "react";
 import Header from "./components/Header";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-import { ISourceOptions } from "tsparticles-engine";
+import Particles from "react-tsparticles";
+import type { ISourceOptions, Engine } from "tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 import particlesOptions from "./styles/particleOptions.json";
 import classes from "./App.module.scss";
 import RouteContent from "./components/RouteContent";
 
 function App() {
-    const particlesInit = useCallback(async (engine) => {
+    const particlesInit = useCallback(async (engine: Engine) => {
         loadStarsPreset(engine);
-        await loadFull(engine);
     }, []);
 
     return (

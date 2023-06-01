@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import titleImage from "./images/ago.png";
 import preview from "./images/ago.png";
 import Slide from "../../components/Slide";
 import classes from "./Projects.module.scss";

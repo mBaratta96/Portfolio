@@ -7,9 +7,8 @@ const Header = () => {
     const projects = displayProjects && (
         <div className={classes.projects}>
             <HeaderLink submenu={true}>Encounters</HeaderLink>
-            <HeaderLink submenu={true}>Caro Amico</HeaderLink>
+            <HeaderLink submenu={true}>A Day at the Park</HeaderLink>
             <HeaderLink submenu={true}>Mirrorland</HeaderLink>
-            <HeaderLink submenu={true}>McCloskey</HeaderLink>
         </div>
     );
     return (

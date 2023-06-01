@@ -10,6 +10,7 @@ const RouteContent = () => {
         <div className={classes.root}>
             <Routes>
                 <Route path="/caroamico" element={<Projects.ShortFilm />} />
+                <Route path="/adayatthepark" element={<Projects.Park />} />
                 <Route path="/mirrorland" element={<Projects.NewShort />} />
                 <Route path="/inspiration" element={<Inspiration />} />
                 <Route path="/encounters" element={<Projects.Encounters />} />

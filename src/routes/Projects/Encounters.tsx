@@ -13,8 +13,8 @@ const content = (
     <Fragment>
         <h2>Synopsis</h2>
         <p>
-            During a night like any other in Rome, music critic and photographer Anton Giulio Onofri recalls the day he
-            met the legendary conductor Leonard Bernstein.
+            During a night like any other in Rome, music critic, TV author, novelist and photographer Anton Giulio
+            Onofri recalls the day he met the legendary conductor Leonard Bernstein.
         </p>
         <p>
             As he takes us on a car trip across the Roman night, we discover an heartwarming story of nostalgia, music,

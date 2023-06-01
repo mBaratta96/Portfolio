@@ -6,9 +6,9 @@ const Header = () => {
     const [displayProjects, setDisplayProjects] = useState(false);
     const projects = displayProjects && (
         <div className={classes.projects}>
+            <HeaderLink submenu={true}>Encounters</HeaderLink>
             <HeaderLink submenu={true}>Caro Amico</HeaderLink>
             <HeaderLink submenu={true}>Mirrorland</HeaderLink>
-            <HeaderLink submenu={true}>Encounters</HeaderLink>
             <HeaderLink submenu={true}>McCloskey</HeaderLink>
         </div>
     );

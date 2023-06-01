@@ -3,14 +3,15 @@ import Slide from "../../components/Slide";
 import hillary from "./images/hillary.png";
 import bucco from "./images/bucco.png";
 import classes from "./Projects.module.scss";
+import YoutubePlayer from "../../components/YoutubePlayer";
 
 const hillarySlide = {
-    slide: <img src={hillary}></img>,
+    slide: <YoutubePlayer url="https://youtu.be/CPYaUr0fbng" />,
     preview: hillary,
 };
 
 const buccoSlide = {
-    slide: <img src={bucco}></img>,
+    slide: <YoutubePlayer url="https://youtu.be/rlVjvjK6-WQ" />,
     preview: bucco,
 };
 

@@ -3,9 +3,10 @@ import titleImage from "./images/ago.png";
 import preview from "./images/ago.png";
 import Slide from "../../components/Slide";
 import classes from "./Projects.module.scss";
+import YoutubePlayer from "../../components/YoutubePlayer";
 
 const titleSlide = {
-    slide: <img src={titleImage}></img>,
+    slide: <YoutubePlayer url="https://youtu.be/WcgPTBVhWz8" />,
     preview: preview,
 };
 
@@ -20,18 +21,17 @@ const content = (
             As he takes us on a car trip across the Roman night, we discover an heartwarming story of nostalgia, music,
             and love.
         </p>
+        <p>
+            Full short{" "}
+            <a target="_blank" rel="noreferrer noopener" className={classes.link} href="https://youtu.be/WcgPTBVhWz8">
+                here
+            </a>
+            .
+        </p>
     </Fragment>
 );
 
-const title = (
-    <Fragment>
-        Encounters — A short documentary made for the RUFA 2022 filmmaking class. Full{" "}
-        <a target="_blank" rel="noreferrer noopener" className={classes.link} href="https://youtu.be/WcgPTBVhWz8">
-            here
-        </a>
-        .
-    </Fragment>
-);
+const title = <Fragment>Encounters — A short documentary made for the RUFA 2022 filmmaking class. </Fragment>;
 
 const Encounters = () => {
     return (

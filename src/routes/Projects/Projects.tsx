@@ -1,8 +1,8 @@
 import ShortFilm from "./ShortFilm";
 import NewShort from "./NewShort";
 import Encounters from "./Encounters";
-import Park from "./Park";
+import Interviews from "./Interviews";
 
-const Projects = { Encounters, ShortFilm, NewShort, Park };
+const Projects = { Encounters, ShortFilm, NewShort, Interviews };
 
 export default Projects;

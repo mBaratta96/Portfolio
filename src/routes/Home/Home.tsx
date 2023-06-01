@@ -14,27 +14,28 @@ interface contentType {
     description: string;
 }
 
-const links = sortBy(parse(contentString, { header: true }).data as contentType[], ["index"]).map((row, index) => (
-    <p key={index}>
-        <Link to={`/${row.link}`} className={classes.textHeader}>
-            {row.header}
-        </Link>{" "}
-        — {row.description}
-    </p>
-));
+const links = sortBy(parse(contentString, { header: true }).data as contentType[], ["index"]).map((row, index) => {
+    return (
+        <p key={index}>
+            <Link to={`/${row.link}`} className={classes.textHeader}>
+                {row.header}
+            </Link>{" "}
+            — {row.description}
+        </p>
+    );
+});
 
 const Home = () => {
     const content = (
         <div>
             <h1 style={{ textAlign: "center" }}>Marco Baratta</h1>
-            <h2 style={{ textAlign: "center" }}>RUFA - MA in Film Arts 2022 - Portfolio</h2>
             <p style={{ textAlign: "center", fontStyle: "italic" }}>
                 I have a sentimental inclination towards hope - Orson Welles
             </p>
             <div className={classes.textLinks}>
-                {links[0]}
+                {links[1]}
                 <h2 style={{ textAlign: "center" }}>My Projects</h2>
-                {[links[1], links[2]]}
+                {[links[2], links[3], links[4]]}
             </div>
             <div className={classes.contact}>
                 <div className={classes.social}>

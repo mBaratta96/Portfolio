@@ -51,7 +51,7 @@ const contentBucco = (
     </Fragment>
 );
 
-const title = <Fragment>Interviews - A two-series interviews made for the RUFA 2022 documentary class.</Fragment>;
+const title = <Fragment>Interviews - A two-part documentary made for the RUFA 2022 documentary class.</Fragment>;
 
 const Interviews = () => {
     return (

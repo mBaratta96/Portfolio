@@ -24,8 +24,8 @@ const HeaderLink = (props: HeaderLinkProps) => {
     return (
         <AnimatedLink
             to={`/${route ?? convertToLink(title)}`}
-            onMouseOver={() => setColor({ backgroundColor: onHoverColor })}
-            onMouseLeave={() => setColor({ backgroundColor: defaultColor })}
+            onMouseOver={() => setColor.start({ backgroundColor: onHoverColor })}
+            onMouseLeave={() => setColor.start({ backgroundColor: defaultColor })}
             style={{ backgroundColor }}
             className={classes.link}>
             {submenu ? <h4>{title}</h4> : <h3>{title}</h3>}

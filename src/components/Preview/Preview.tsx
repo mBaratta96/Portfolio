@@ -36,8 +36,8 @@ const Preview = (props: previewProps): JSX.Element => {
             <div
                 key={index}
                 className={classes.image}
-                onMouseEnter={() => set({ scale: 1.1 })}
-                onMouseLeave={() => set({ scale: 1 })}
+                onMouseEnter={() => set.start({ scale: 1.1 })}
+                onMouseLeave={() => set.start({ scale: 1 })}
                 onClick={() => setSlide(index)}
                 style={{
                     gridColumnStart: initialColumn + index,

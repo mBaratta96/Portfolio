@@ -29,13 +29,44 @@ const Home = () => {
     const content = (
         <div>
             <h1 style={{ textAlign: "center" }}>Marco Baratta</h1>
+            <h2 style={{ textAlign: "center" }}>
+                Machine Learning Engineer and aspiring filmmaker. Always searching for new things to learn.
+            </h2>
             <p style={{ textAlign: "center", fontStyle: "italic" }}>
                 I have a sentimental inclination towards hope - Orson Welles
             </p>
+
             <div className={classes.textLinks}>
-                {links[1]}
-                <h2 style={{ textAlign: "center" }}>My Projects</h2>
-                {[links[2], links[3], links[4]]}
+                <ul>
+                    <li>
+                        <span className={classes.textHeader}>Master's Degree in Computer Science and Engineering</span>{" "}
+                        — Politecnico di Milano
+                    </li>
+                    <li>
+                        <span className={classes.textHeader}>Master's Degree in Film Arts</span> — RUFA (Rome University
+                        of Fine Arts)
+                    </li>
+                    <li>
+                        <a
+                            className={classes.textHeader}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            href="https://drive.google.com/file/d/1x2RyW-YYrFnyfIPv9cgy9tNjg5tY2ox9/view?usp=sharing">
+                            My CV
+                        </a>{" "}
+                        (
+                        <a
+                            className={classes.textHeader}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                            href="https://drive.google.com/file/d/10WYrPJFKvQDd_Je9p1vGVdB1Ucgo_ngy/view?usp=sharing">
+                            CV ita
+                        </a>
+                        )
+                    </li>
+                    <li>{links[2]}</li>
+                    <li>{links[1]}</li>
+                </ul>
             </div>
             <div className={classes.contact}>
                 <div className={classes.social}>

@@ -10,10 +10,8 @@ const RouteContent = () => {
         <div className={classes.root}>
             <Routes>
                 {/*<Route path="/caroamico" element={<Projects.ShortFilm />*/}
-                <Route path="/interviews" element={<Projects.Interviews />} />
-                <Route path="/mirrorland" element={<Projects.NewShort />} />
+                <Route path="/projects" element={<Projects.Interviews />} />
                 <Route path="/inspiration" element={<Inspiration />} />
-                <Route path="/encounters" element={<Projects.Encounters />} />
                 <Route path="/" element={<Home />} />
                 <Route
                     path="*"

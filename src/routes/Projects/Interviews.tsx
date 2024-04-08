@@ -115,8 +115,8 @@ const Interviews = () => {
     return (
         <Fragment>
             <Slide
-                media={[hillarySlide, buccoSlide, encounterSlide, puntaslide]}
-                content={[contentHillary, contentBucco, contentEncounters, contentPunta]}
+                media={[puntaslide, encounterSlide, hillarySlide, buccoSlide]}
+                content={[contentPunta, contentEncounters, contentHillary, contentBucco]}
                 title={title}
             />
         </Fragment>

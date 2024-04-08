@@ -6,8 +6,8 @@ const Header = () => {
     return (
         <div className={classes.root}>
             <HeaderLink route="">Home</HeaderLink>
-            <HeaderLink>Inspiration</HeaderLink>
             <HeaderLink>Projects</HeaderLink>
+            <HeaderLink>Inspiration</HeaderLink>
         </div>
     );
 };

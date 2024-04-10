@@ -24,9 +24,6 @@ const HeaderLink = (props: HeaderLinkProps) => {
     const AnimatedLink = animated(Link);
     const location = useLocation();
     const url = `/${route ?? convertToLink(title)}`;
-    console.log(location.pathname);
-    console.log(url);
-    console.log(classes);
 
     return (
         <AnimatedLink

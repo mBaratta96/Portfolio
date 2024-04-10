@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import { parse } from "papaparse";
 import contentString from "./content.csv?raw";
 import { sortBy } from "underscore";
+import hillary from "../Projects/images/hillary.png";
+import bucco from "../Projects/images/bucco.png";
+import ago from "../Projects/images/ago.png";
+import punta from "../Projects/images/puntaPreview.webp";
 
 interface contentType {
     index: string;
@@ -25,6 +29,14 @@ const links = sortBy(parse(contentString, { header: true }).data as contentType[
     );
 });
 
+const carousel = [punta, ago, hillary, bucco].map((image) => (
+    <div key={image} className={classes["carousel-image"]}>
+        <Link to="/projects">
+            <img width="100%" src={image} />
+        </Link>
+    </div>
+));
+
 const Home = () => {
     const content = (
         <div>
@@ -35,7 +47,7 @@ const Home = () => {
             <p style={{ textAlign: "center", fontStyle: "italic" }}>
                 I have a sentimental inclination towards hope - Orson Welles
             </p>
-
+            <div className={classes.carousel}>{carousel}</div>
             <div className={classes.textLinks}>
                 <ul>
                     <li>

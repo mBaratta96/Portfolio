@@ -4,6 +4,7 @@ import hillary from "./images/hillary.png";
 import bucco from "./images/bucco.png";
 import ago from "./images/ago.png";
 import punta from "./images/puntaPreview.webp";
+import ragazzi from "./images/ragazzi.webp";
 import classes from "./Projects.module.scss";
 import YoutubePlayer from "../../components/YoutubePlayer";
 
@@ -25,6 +26,11 @@ const encounterSlide = {
 const puntaslide = {
     slide: <YoutubePlayer url="https://youtu.be/1UZvKmc9Les" />,
     preview: punta,
+};
+
+const ragazziSlide = {
+    slide: <YoutubePlayer url="https://youtu.be/G3eRpJyJ5Vg" />,
+    preview: ragazzi,
 };
 
 const contentHillary = (
@@ -100,11 +106,23 @@ const contentPunta = (
             country.
         </p>
         <p>
+            To request a preview, send a mail to{" "}
+            <a className={classes.link} href="mailto:marcobaratta96@gmail.com">
+                marcobaratta96@gmail.com
+            </a>
+        </p>
+    </Fragment>
+);
+
+const contentRagazzi = (
+    <Fragment>
+        <h2>Tre Allegri Ragazzi Morti</h2>
+        <p>Three young men are waiting in a limbo to get a call to Paradise.</p>
+        <p>
             Full short{" "}
-            <a target="_blank" rel="noreferrer noopener" className={classes.link} href="https://youtu.be/1UZvKmc9Les">
+            <a target="_blank" rel="noreferrer noopener" className={classes.link} href="https://youtu.be/G3eRpJyJ5Vg">
                 here
             </a>
-            .
         </p>
     </Fragment>
 );
@@ -115,8 +133,8 @@ const Interviews = () => {
     return (
         <Fragment>
             <Slide
-                media={[puntaslide, encounterSlide, hillarySlide, buccoSlide]}
-                content={[contentPunta, contentEncounters, contentHillary, contentBucco]}
+                media={[puntaslide, ragazziSlide, encounterSlide, hillarySlide, buccoSlide]}
+                content={[contentPunta, contentRagazzi, contentEncounters, contentHillary, contentBucco]}
                 title={title}
             />
         </Fragment>

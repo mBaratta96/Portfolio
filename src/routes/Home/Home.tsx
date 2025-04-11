@@ -10,6 +10,7 @@ import hillary from "../Projects/images/hillary.png";
 import bucco from "../Projects/images/bucco.png";
 import ago from "../Projects/images/ago.png";
 import punta from "../Projects/images/puntaPreview.webp";
+import ragazzi from "../Projects/images/ragazzi.webp";
 
 interface contentType {
     index: string;
@@ -29,7 +30,7 @@ const links = sortBy(parse(contentString, { header: true }).data as contentType[
     );
 });
 
-const carousel = [punta, ago, hillary, bucco].map((image) => (
+const carousel = [punta, ragazzi, ago, hillary, bucco].map((image) => (
     <div key={image} className={classes["carousel-image"]}>
         <Link to="/projects">
             <img width="100%" src={image} />
@@ -42,7 +43,7 @@ const Home = () => {
         <div>
             <h1 style={{ textAlign: "center" }}>Marco Baratta</h1>
             <h2 style={{ textAlign: "center" }}>
-                Machine Learning Engineer and aspiring filmmaker. Always searching for new things to learn.
+                Machine Learning Engineer and Filmmaker. Always in search of new things to learn.
             </h2>
             <p style={{ textAlign: "center", fontStyle: "italic" }}>
                 I have a sentimental inclination towards hope - Orson Welles
@@ -51,12 +52,14 @@ const Home = () => {
             <div className={classes.textLinks}>
                 <ul>
                     <li>
-                        <span className={classes.textHeader}>Master's Degree in Computer Science and Engineering</span>{" "}
+                        <span className={classes.textHeader}>
+                            Master&apos;s Degree in Computer Science and Engineering
+                        </span>{" "}
                         — Politecnico di Milano
                     </li>
                     <li>
-                        <span className={classes.textHeader}>Master's Degree in Film Arts</span> — RUFA (Rome University
-                        of Fine Arts)
+                        <span className={classes.textHeader}>Master&apos;s Degree in Film Arts</span> — RUFA (Rome
+                        University of Fine Arts)
                     </li>
                     <li>
                         <a
